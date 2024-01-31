@@ -1,9 +1,10 @@
 .Navigation-Bar{
     .start{
         margin-left: 1vw;
+        font-weight: bold;
     }
 }
 .underline {
-    border-bottom: 1px solid black; /* Set the bottom border */
+    border-bottom: .2vh solid black;
   }
   
