@@ -3,9 +3,6 @@ import "./Navibar.css";
 import { Nav, Navbar } from "react-bootstrap";
 
 function Navibar() {
-  const resumeClick = () => {
-    window.location.href = "/resume";
-  };
 
   return (
     <Navbar bg="light" className="Navigation-Bar">
