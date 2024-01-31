@@ -1,5 +1,10 @@
 .Navigation-Bar{
     .start{
         margin-left: 1vw;
+        font-weight: bold;
     }
 }
+.underline {
+    border-bottom: .2vh solid black;
+  }
+  
