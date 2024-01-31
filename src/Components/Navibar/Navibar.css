@@ -3,3 +3,7 @@
         margin-left: 1vw;
     }
 }
+.underline {
+    border-bottom: 1px solid black; /* Set the bottom border */
+  }
+  
