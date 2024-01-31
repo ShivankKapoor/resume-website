@@ -1,15 +1,16 @@
-import { link } from "fs";
 import "./Navibar.css";
+import {Nav, Navbar } from "react-bootstrap";
 
 function Navibar() {
   return (
-    <div className="Nav">
-      <h1>Shivank Kapoor</h1>
-      <div className="links">
-        <a href="/">Home</a>
-        <a href="/Resume">Resume</a>
-      </div>
-    </div>
+    <Navbar bg="light" className="Navigation-Bar">
+          <Navbar.Brand className="start" href="#home">Shivank Kapoor</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#resume">Resume</Nav.Link>
+          </Nav>
+      </Navbar>
   );
 }
 
