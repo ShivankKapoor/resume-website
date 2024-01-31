@@ -1,11 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navibar from "./Components/Navibar/Navibar";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Shivank Kapoor</h1>
+    <div>
+      <Navibar />
+      <Home />
     </div>
   );
 }
