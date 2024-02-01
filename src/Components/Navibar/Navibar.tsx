@@ -1,13 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import "./Navibar.css";
-
+import logo from "./logo.png";
 function Navibar() {
   const location = useLocation().pathname;
 
   return (
     <Navbar collapseOnSelect expand="sm" bg="light" variant="light" className="Navigation-Bar">
-      <Navbar.Brand href="/" className="start">Shivank Kapoor</Navbar.Brand>
+      <img src={logo} alt="Shivank Kapoor" />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
