@@ -1,0 +1,14 @@
+.title-card {
+  padding-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90vw;
+}
+
+.card-title {
+  font-size: 3.25vh !important;
+}
