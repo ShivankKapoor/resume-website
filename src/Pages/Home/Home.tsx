@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className="title-card">
         <Card className="card">
-          <Card.Body>
+          <Card.Body className="card-body">
             <Card.Title className="card-title">Firstname Lastname</Card.Title>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla

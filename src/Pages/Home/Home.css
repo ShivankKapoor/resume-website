@@ -20,6 +20,10 @@
     margin-top: 12vh;
     z-index: 0;
   }
+
+  .card-body{
+    font-size: 1.80vh !important;
+  }
   
   .card {
     width: 90vw;
