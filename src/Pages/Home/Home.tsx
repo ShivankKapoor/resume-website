@@ -3,19 +3,18 @@ import "./Home.css";
 import profile from "./profile.jpg";
 
 function Home() {
-
   return (
-    <>
+    <div className="home-container">
+      <div className="profile-image-div">
+        <img
+          src={profile}
+          className="rounded mx-auto d-block profile-image"
+          alt="Profile Image"
+        />
+      </div>
       <div className="title-card">
         <Card className="card">
           <Card.Body>
-            <div className="profile-image-div">
-              <img
-                src={profile}
-                className="rounded mx-auto d-block profile-image"
-                alt="Profile Image"
-              ></img>
-            </div>
             <Card.Title className="card-title">Firstname Lastname</Card.Title>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
@@ -25,7 +24,7 @@ function Home() {
           </Card.Body>
         </Card>
       </div>
-    </>
+    </div>
   );
 }
 

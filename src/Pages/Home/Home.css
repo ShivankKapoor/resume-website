@@ -1,25 +1,32 @@
-.title-card {
-  padding-top: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  width: 90vw;
-}
-
-.profile-image-div {
-  display: inline-block;
-  align-items: flex-start;
-  justify-content: left;
-  flex-direction: column;
-}
-
-.profile-image {
-  width: 15vh;
-}
-
-.card-title {
-  font-size: 3.25vh !important;
-}
+.home-container {
+    position: relative;
+  }
+  
+  .profile-image-div {
+    position: absolute;
+    top: -10vh;
+    left: 7vw;
+    z-index: 1;
+  }
+  
+  .profile-image {
+    width: 15vh;
+  }
+  
+  .title-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    z-index: 0;
+  }
+  
+  .card {
+    width: 90vw;
+  }
+  
+  .card-title {
+    padding-top: 5vh;
+    font-size: 3.25vh !important;
+  }
+  
