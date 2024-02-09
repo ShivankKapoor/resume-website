@@ -1,8 +1,9 @@
 import Card from "react-bootstrap/Card";
 import "./Home.css";
-import logo from "./logo.png";
+import profile from "./profile.jpg";
 
 function Home() {
+
   return (
     <>
       <div className="title-card">
@@ -10,7 +11,7 @@ function Home() {
           <Card.Body>
             <div className="profile-image-div">
               <img
-                src={logo}
+                src={profile}
                 className="rounded mx-auto d-block profile-image"
                 alt="Profile Image"
               ></img>
