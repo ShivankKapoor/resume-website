@@ -9,6 +9,17 @@
   width: 90vw;
 }
 
+.profile-image-div {
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.profile-image {
+  width: 5vw;
+}
+
 .card-title {
   font-size: 3.25vh !important;
 }

@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import "./Home.css";
+import logo from "./logo.png";
 
 function Home() {
   return (
@@ -7,6 +8,13 @@ function Home() {
       <div className="title-card">
         <Card className="card">
           <Card.Body>
+            <div className="profile-image-div">
+              <img
+                src={logo}
+                className="rounded mx-auto d-block profile-image"
+                alt="Profile Image"
+              ></img>
+            </div>
             <Card.Title className="card-title">Firstname Lastname</Card.Title>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
