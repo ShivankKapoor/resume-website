@@ -21,7 +21,12 @@ function Home() {
             quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
             mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
             Vestibulum lacinia arcu eget nulla.
+            <div>
+            <button type="button" className="btn linkdinButton">Primary</button>
+            <button type="button" className="btn gitHubButton">Primary</button>
+            </div>
           </Card.Body>
+          
         </Card>
       </div>
     </div>
