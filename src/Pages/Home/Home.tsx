@@ -22,11 +22,15 @@ function Home() {
             mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
             Vestibulum lacinia arcu eget nulla.
             <div>
-            <button type="button" className="btn linkdinButton">Primary</button>
-            <button type="button" className="btn gitHubButton">Primary</button>
+              <button type="button" className="btn linkdinButton">
+                <i className="bi bi-linkedin"></i> linkedin
+              </button>
+              <button type="button" className="btn gitHubButton">
+                <i className="bi bi-github"></i> Github
+              </button>
             </div>
           </Card.Body>
-          
+
         </Card>
       </div>
     </div>
