@@ -35,7 +35,7 @@ export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = 
                         {description}
                         <div>
                             <button type="button" className="btn linkdinButton" onClick={linkedinButtonClick}>
-                                <i className="bi bi-linkedin"></i> linkedin
+                                <i className="bi bi-linkedin"></i> Linkedin
                             </button>
                             <button type="button" className="btn gitHubButton" onClick={githubButtonClick}>
                                 <i className="bi bi-github"></i> Github
