@@ -1,0 +1,50 @@
+.home-container {
+    position: relative;
+  }
+  
+  .profile-image-div {
+    position: absolute;
+    top: -10vh;
+    left: 7vw;
+    z-index: 1;
+  }
+  
+  .profile-image {
+    width: 15vh;
+  }
+  
+  .title-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    z-index: 0;
+  }
+
+  .card-body{
+    font-size: 1.80vh !important;
+  }
+  
+  .card {
+    width: 90vw;
+  }
+  
+  .card-title {
+    padding-top: 5vh;
+    font-size: 3.25vh !important;
+  }
+
+  .btn{
+    margin-top: 2vh;
+    margin-right: 1vw;
+  }
+  
+.linkdinButton{
+  color: white !important;
+  background-color: #1064c4 !important;
+}
+
+.gitHubButton{
+  color: white !important;
+  background-color: black !important;
+}
