@@ -1,6 +1,4 @@
-import Card from "react-bootstrap/Card";
 import "./Home.css";
-import profile from "./profile.jpg";
 import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileOverviewCard";
 
 function Home() {

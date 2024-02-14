@@ -20,7 +20,7 @@ export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = 
         window.open(githubLink,"_blank");
     }
     return (
-        <div className="home-container">
+        <div className="card-container">
             <div className="profile-image-div">
                 <img
                     src={profile}
