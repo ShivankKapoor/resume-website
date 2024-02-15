@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import "./EducationSection.css";
 import { Card } from "react-bootstrap";
-import edu from "./edu.png";
+
 
 type EducationSectionProps = {
     schoolName: string,
@@ -21,12 +21,12 @@ export const EducationSection: FunctionComponent<EducationSectionProps> = ({ sch
                 </Card.Header>
                 <Card.Body className="flex-row">
                     <div className="education-image-container">
-                        <img className="education-image" src={edu} alt="Education Icon" />
+                        <img className="education-image" src={schoolLogo} alt="Education Icon" />
                     </div>
                     <div className="school-info-container">
-                        <h5>School Name</h5>
-                        <h6>Bachelor's degree, (Degree Subject)</h6>
-                        <text>Start Year - End year</text>
+                        <h5>{schoolName}</h5>
+                        <h6>{degreeTitle}, {degreeMajor}</h6>
+                        <text>{yearStart} - {yearEnd}</text>
                     </div>
                 </Card.Body>
             </Card>
