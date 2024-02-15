@@ -1,6 +1,7 @@
 import "./Home.css";
 import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileOverviewCard";
 import profile from "./profile.jpg";
+import EducationSection from "../../Components/Education-Section/EducationSection";
 
 function Home() {
   return (
@@ -11,6 +12,8 @@ function Home() {
             quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
             mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
             Vestibulum lacinia arcu eget nulla." profilePicture={profile} linkedinLink="https://www.linkedin.com/" githubLink="https://github.com/"></ProfileOverviewCard>
+      
+      <EducationSection schoolName="University of Nowhere" schoolLogo="" degreeTitle="degreeTitle" degreeMajor="degreeMajor" yearStart={1776} yearEnd={2024} ></EducationSection>
     </>
   );
 }
