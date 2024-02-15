@@ -1,29 +1,29 @@
 import { FunctionComponent } from "react";
 import "./ProfileOverviewCard.css";
 import Card from "react-bootstrap/Card";
-import profile from "./profile.jpg";
 
 type ProfileOverviewCardProps = {
     firstName: string,
     lastName: string,
+    profilePicture: string,
     description: string,
     linkedinLink: string,
     githubLink: string
 }
 
 
-export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = ({ firstName, lastName, description, linkedinLink, githubLink }) => {
-    const linkedinButtonClick = () =>{
-        window.open(linkedinLink,"_blank");
+export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = ({ firstName, lastName, profilePicture, description, linkedinLink, githubLink }) => {
+    const linkedinButtonClick = () => {
+        window.open(linkedinLink, "_blank");
     }
-    const githubButtonClick = () =>{
-        window.open(githubLink,"_blank");
+    const githubButtonClick = () => {
+        window.open(githubLink, "_blank");
     }
     return (
         <div className="card-container">
             <div className="profile-image-div">
                 <img
-                    src={profile}
+                    src={profilePicture}
                     className="rounded mx-auto d-block profile-image"
                     alt="Profile Image"
                 />
