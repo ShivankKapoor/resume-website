@@ -35,16 +35,18 @@
   }
 
   .btn{
+    width: auto;
+    height: auto;
     margin-top: 2vh;
     margin-right: 1vw;
   }
   
-.linkdinButton{
+.Linkdin-Button{
   color: white !important;
   background-color: #1064c4 !important;
 }
 
-.gitHubButton{
+.GitHub-Button{
   color: white !important;
   background-color: black !important;
 }

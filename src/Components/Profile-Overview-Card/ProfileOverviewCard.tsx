@@ -34,10 +34,10 @@ export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = 
                         <Card.Title className="card-title">{firstName} {lastName}</Card.Title>
                         {description}
                         <div>
-                            <button type="button" className="btn linkdinButton" onClick={linkedinButtonClick}>
+                            <button type="button" className="btn Linkdin-Button" onClick={linkedinButtonClick}>
                                 <i className="bi bi-linkedin"></i> Linkedin
                             </button>
-                            <button type="button" className="btn gitHubButton" onClick={githubButtonClick}>
+                            <button type="button" className="btn GitHub-Button" onClick={githubButtonClick}>
                                 <i className="bi bi-github"></i> Github
                             </button>
                         </div>
