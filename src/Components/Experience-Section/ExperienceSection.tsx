@@ -21,9 +21,9 @@ export const ExperienceSection: FunctionComponent<
           <div className="experience-info-container">
             <h5>Position</h5>
             <h6>Employer</h6>
-            <h6>MM/YYYY - MM/YYYY</h6>
+            <text>MM/YYYY - MM/YYYY</text>
             <div className="experience-description">
-              <h6>
+              <text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -31,7 +31,7 @@ export const ExperienceSection: FunctionComponent<
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </h6>
+              </text>
             </div>
           </div>
         </Card.Body>
