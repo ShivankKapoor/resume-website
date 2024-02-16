@@ -31,8 +31,8 @@ export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = 
             <div className="title-card">
                 <Card className="card">
                     <Card.Body className="card-body">
-                        <Card.Title className="card-title">{firstName} {lastName}</Card.Title>
-                        {description}
+                        <Card.Title className="card-title"><h3>{firstName} {lastName}</h3></Card.Title>
+                        <text>{description}</text>
                         <div>
                             <button type="button" className="btn Linkdin-Button" onClick={linkedinButtonClick}>
                                 <i className="bi bi-linkedin"></i> Linkedin
