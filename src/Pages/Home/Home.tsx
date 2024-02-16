@@ -3,6 +3,7 @@ import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileO
 import profile from "./profile.jpg";
 import EducationSection from "../../Components/Education-Section/EducationSection";
 import edu from "./edu.png";
+import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
             Vestibulum lacinia arcu eget nulla." profilePicture={profile} linkedinLink="https://www.linkedin.com/" githubLink="https://github.com/"></ProfileOverviewCard>
       
       <EducationSection schoolName="University of No Where" schoolLogo={edu} degreeTitle="Degree Title" degreeMajor="Degree Major" yearStart={1776} yearEnd={9999} ></EducationSection>
+      <ExperienceSection></ExperienceSection>
     </>
   );
 }
