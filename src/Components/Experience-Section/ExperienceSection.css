@@ -1,6 +1,36 @@
-.experience-card {
+.experience-card-container {
+    position: relative;
+}
+
+.experience-info-card {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4vh;
+}
+
+.experience-card-body {
+    font-size: 1.80vh !important;
+}
+
+.experience-card {
+    width: 90vw;
+}
+
+.experience-card-title {
+    font-size: 3.25vh !important;
+}
+
+.experience-image {
+    width: 10vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experience-image-container {
+    margin-right: 10px;
 }
