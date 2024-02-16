@@ -15,7 +15,7 @@ function Home() {
             mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
             Vestibulum lacinia arcu eget nulla." profilePicture={profile} linkedinLink="https://www.linkedin.com/" githubLink="https://github.com/"></ProfileOverviewCard>
       
-      <EducationSection schoolName="University of No Where" schoolLogo={edu} degreeTitle="Degree Title" degreeMajor="Degree Major" yearStart={1776} yearEnd={9999} ></EducationSection>
+      <EducationSection schoolName="University of State" schoolLogo={edu} degreeTitle="Degree Title" degreeMajor="Degree Major" yearStart={1776} yearEnd={9999} ></EducationSection>
       <ExperienceSection></ExperienceSection>
     </>
   );
