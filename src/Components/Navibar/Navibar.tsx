@@ -6,7 +6,7 @@ function Navibar() {
   const location = useLocation().pathname;
 
   return (
-    <Navbar collapseOnSelect expand="sm" bg="light" variant="light" className="Navigation-Bar">
+    <Navbar sticky="top" collapseOnSelect expand="sm" bg="light" variant="light" className="Navigation-Bar">
       <img src={logo} alt="Shivank Kapoor" />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
