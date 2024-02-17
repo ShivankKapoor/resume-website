@@ -5,6 +5,7 @@ import EducationSection from "../../Components/Education-Section/EducationSectio
 import edu from "./edu.png";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 import work from "./work.png";
+import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 
 function Home() {
   return (
@@ -31,6 +32,7 @@ function Home() {
         yearStart={1776}
         yearEnd={9999}
       ></EducationSection>
+
       <ExperienceSection
         workIcon={work}
         position="Position"
@@ -44,6 +46,33 @@ function Home() {
           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       ></ExperienceSection>
+
+      <SkillsSection
+        skills={[
+          "Skills #1",
+          "Skills #2",
+          "Skills #3",
+          "Skills #4",
+          "Skills #5",
+          "Skills #6",
+          "Skills #7",
+          "Skills #8",
+          "Skills #9",
+          "Skills #10",
+          "Skills #11",
+          "Skills #12",
+          "Skills #13",
+          "Skills #14",
+          "Skills #15",
+          "Skills #16",
+          "Skills #17",
+          "Skills #18",
+          "Skills #19",
+          "Skills #20",
+          "Skills #21",
+        ]}
+      ></SkillsSection>
+
       <p></p>
     </>
   );
