@@ -6,6 +6,7 @@ import edu from "./edu.png";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 import work from "./work.png";
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
+import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
 function Home() {
   return (
@@ -72,6 +73,16 @@ function Home() {
           "Skills #21",
         ]}
       ></SkillsSection>
+
+      <CoursesSection Courses={["Class/Course #1",
+        "Class/Course #2",
+        "Class/Course #3",
+        "Class/Course #4",
+        "Class/Course #5",
+        "Class/Course #6",
+        "Class/Course #7",
+        "Class/Course #8",
+      ]}></CoursesSection>
 
       <p></p>
     </>
