@@ -1,0 +1,36 @@
+.education-card-container {
+    position: relative;
+}
+
+.education-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.education-card-body {
+    font-size: 1.80vh !important;
+}
+
+.education-card {
+    width: 90vw;
+}
+
+.education-card-title {
+    font-size: 3.25vh !important;
+}
+
+.education-image {
+    width: 10vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.education-image-container {
+    margin-right: 10px;
+}

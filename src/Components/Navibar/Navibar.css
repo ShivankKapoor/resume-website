@@ -1,10 +1,22 @@
-.Navigation-Bar{
-    .start{
-        margin-left: 1vw;
-        font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.Navigation-Bar {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight:600;
+    position: sticky !important;
+    top: 0 !important;;
+
+    img {
+        margin-left: 10px;
+        height: 7vh;
+        padding-right: 1vw;
+    }
+
+    .nav-item {
+        padding-right: 1px;
+    }
+
+    .active {
+        border-bottom: 1px solid black;
     }
 }
-.underline {
-    border-bottom: .2vh solid black;
-  }
-  

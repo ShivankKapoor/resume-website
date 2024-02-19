@@ -1,0 +1,21 @@
+.courses-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.courses-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-item{
+  margin-right: .1vw;
+}
+
+
+.list-group-item {
+    white-space: nowrap;
+  }
