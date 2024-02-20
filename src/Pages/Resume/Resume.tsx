@@ -1,9 +1,13 @@
-import './Resume.css'
+import PDFSection from "../../Components/PDF-Section/PDFSection";
+
+import "./Resume.css";
 
 function Resume() {
-    return (
-        <h2>Resume Works</h2>
-    );
+  return (
+    <>
+      <PDFSection></PDFSection>
+    </>
+  );
 }
 
 export default Resume;
