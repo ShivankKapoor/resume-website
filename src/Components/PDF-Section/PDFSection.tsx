@@ -42,25 +42,17 @@ export default function PDFSection() {
 
   useResizeObserver(containerRef, resizeObserverOptions, onResize);
 
-  function onFileChange(event: React.ChangeEvent<HTMLInputElement>): void {
-    const { files } = event.target;
-
-    if (files && files[0]) {
-      setFile(files[0] || null);
-    }
-  }
-
   function onDocumentLoadSuccess({ numPages: nextNumPages }: PDFDocumentProxy): void {
     setNumPages(nextNumPages);
   }
 
   return (
-    <div className="Example">
-      <div className="Example__container">
-        <div className="Example__container__load">
+    <div className="PDF">
+      <div className="PDF__container">
+        <div className="PDF__container__load">
           <label htmlFor="file">Load from file:</label>{' '}
         </div>
-        <div className="Example__container__document" ref={setContainerRef}>
+        <div className="PDF__container__document" ref={setContainerRef}>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (
               <Page

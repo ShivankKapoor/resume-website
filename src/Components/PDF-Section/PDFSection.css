@@ -3,47 +3,47 @@ body {
     background-color: #525659;
   }
   
-  .Example input,
-  .Example button {
+  .PDF input,
+  .PDF button {
     font: inherit;
   }
   
-  .Example header {
+  .PDF header {
     background-color: #323639;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     color: white;
   }
   
-  .Example header h1 {
+  .PDF header h1 {
     font-size: inherit;
     margin: 0;
   }
   
-  .Example__container {
+  .PDF__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .Example__container__load {
+  .PDF__container__load {
     color: white;
   }
   
-  .Example__container__document {
+  .PDF__container__document {
     width: 100%;
     max-width: calc(100% - 2em);
   }
   
-  .Example__container__document .react-pdf__Document {
+  .PDF__container__document .react-pdf__Document {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .Example__container__document .react-pdf__Page {
+  .PDF__container__document .react-pdf__Page {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   }
   
-  .Example__container__document .react-pdf__message {
+  .PDF__container__document .react-pdf__message {
     color: white;
   }
