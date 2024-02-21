@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #525659;
+  }
+  
+  .PDF input,
+  .PDF button {
+    font: inherit;
+  }
+  
+  .PDF header {
+    background-color: #323639;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .PDF header h1 {
+    font-size: inherit;
+    margin: 0;
+  }
+  
+  .PDF__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4vh;
+  }
+  
+  .PDF__container__load {
+    color: white;
+  }
+  
+  .PDF__container__document {
+    width: 100%;
+    max-width: calc(100% - 2em);
+  }
+  
+  .PDF__container__document .react-pdf__Document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .PDF__container__document .react-pdf__Page {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .PDF__container__document .react-pdf__message {
+    color: white;
+  }
