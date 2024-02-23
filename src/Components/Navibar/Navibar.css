@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 .Navigation-Bar {
-    font-family: "Kode Mono", monospace;
     font-weight:bold;
     position: sticky !important;
     top: 0 !important;;
