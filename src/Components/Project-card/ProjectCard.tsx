@@ -1,21 +1,29 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
-import './ProjectCard.css'
+import "./ProjectCard.css";
 
 function ProjectCard() {
   return (
-    <div className="d-flex justify-content-around">
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+    <div className="education-info-card">
+      <Card>
+        <Card.Header>
+          <h3>Project Name</h3>
+        </Card.Header>
+        <Card.Body className="flex-row">
+          <div className="education-image-container">
+            <img className="education-image" src={""} alt="Project Icon" />
+          </div>
+          <div className="school-info-container">
+            <h5>Project Name</h5>
+            <text>
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.
+            </text>
+          </div>
         </Card.Body>
+
       </Card>
     </div>
   );
