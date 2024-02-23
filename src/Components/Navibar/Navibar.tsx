@@ -5,9 +5,13 @@ import logo from "./logo.png";
 function Navibar() {
   const location = useLocation().pathname;
 
+  const handleClick = () => {
+    window.location.href = "/";
+  };
+
   return (
     <Navbar sticky="top" collapseOnSelect expand="sm" bg="light" variant="light" className="Navigation-Bar">
-      <img src={logo} alt="Shivank Kapoor" />
+      <img src={logo} alt="Shivank Kapoor" onClick={handleClick}/>
       <Navbar.Toggle className="mobile-navbar-button" aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
