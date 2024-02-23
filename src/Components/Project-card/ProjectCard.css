@@ -21,4 +21,6 @@
 
 .show-code-button{
     margin-top: -.5vh;
+    color: white !important;
+    background-color: #333 !important;
 }
