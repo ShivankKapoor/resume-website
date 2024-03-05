@@ -74,15 +74,18 @@ function Home() {
         ]}
       ></SkillsSection>
 
-      <CoursesSection Courses={["Class/Course #1",
-        "Class/Course #2",
-        "Class/Course #3",
-        "Class/Course #4",
-        "Class/Course #5",
-        "Class/Course #6",
-        "Class/Course #7",
-        "Class/Course #8",
-      ]}></CoursesSection>
+      <CoursesSection
+        Courses={[
+          "Class/Course #1",
+          "Class/Course #2",
+          "Class/Course #3",
+          "Class/Course #4",
+          "Class/Course #5",
+          "Class/Course #6",
+          "Class/Course #7",
+          "Class/Course #8",
+        ]}
+      ></CoursesSection>
 
       <p></p>
     </>

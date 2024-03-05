@@ -1,30 +1,40 @@
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Card from "react-bootstrap/Card";
-import project from "./project.png";
 import "./ProjectCard.css";
 
-function ProjectCard() {
-  var githubLink = " ";
+type ProjectCardProps = {
+  projectName: string;
+  projectDesc: string;
+  gitHubLink: string;
+  projectIcon: string;
+};
+
+const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
+  projectName,
+  projectDesc,
+  gitHubLink,
+  projectIcon,
+}) => {
   const githubButtonClick = () => {
-    window.open(githubLink, "_blank");
+    window.open(gitHubLink, "_blank");
   };
+
   return (
     <Card style={{ width: "90vw" }} className="project-card">
       <Card.Header className="project-name">
-        <h3>Project Name</h3>
+        <h3>{projectName}</h3>
       </Card.Header>
       <Card.Body>
         <div className="project-content-container">
           <div className="project-image-container">
-            <img className="project-image" src={project} alt="Education Icon" />
+            <img
+              className="project-image"
+              src={projectIcon}
+              alt="Project Icon"
+            />
           </div>
           <div className="project-info-container">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-              Praesent mauris. Fusce nec tellus sed augue semper porta.
-            </p>
+            <p>{projectDesc}</p>
             <button
               type="button"
               className="btn show-code-button"
@@ -37,6 +47,6 @@ function ProjectCard() {
       </Card.Body>
     </Card>
   );
-}
+};
 
 export default ProjectCard;
