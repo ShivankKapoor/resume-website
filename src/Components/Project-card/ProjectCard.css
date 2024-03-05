@@ -1,0 +1,26 @@
+.project-card {
+  margin-top: 5vh;
+}
+
+.project-image {
+  width: 10vh;
+}
+.project-content-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-image-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.project-info-container {
+  flex: 1; 
+}
+
+.show-code-button{
+    margin-top: -.5vh;
+    color: white !important;
+    background-color: #333 !important;
+}
