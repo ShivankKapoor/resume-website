@@ -12,78 +12,69 @@ function Home() {
   return (
     <>
       <ProfileOverviewCard
-        firstName="Firstname"
-        lastName="Lastname"
+        firstName="Shivank"
+        lastName="Kapoor"
         description="
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-            mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-            Vestibulum lacinia arcu eget nulla."
-        profilePicture={profile}
-        linkedinLink="https://www.linkedin.com/"
-        githubLink="https://github.com/"
+        Computer Science Student at the University of Texas at Dallas"
+        profilePicture="https://media.licdn.com/dms/image/D5603AQG-YIdZoHjVmg/profile-displayphoto-shrink_200_200/0/1666035409378?e=1715212800&v=beta&t=n3P4Iro_psOBVr1iDmwGNL6wkJBX_lEFXxDw0ssngFc"
+        linkedinLink="https://www.linkedin.com/in/shivankkapoor/"
+        githubLink="https://github.com/ShivankKapoor"
       ></ProfileOverviewCard>
 
       <EducationSection
-        schoolName="University of State"
-        schoolLogo={edu}
-        degreeTitle="Degree Title"
-        degreeMajor="Degree Major"
-        yearStart={1776}
-        yearEnd={9999}
+        schoolName="The University of Texas at Dallas"
+        schoolLogo="https://yt3.googleusercontent.com/ytc/AIdro_mZBJGJC27mRaJSqFsKlLUxn4IOPl5godX8Shxi9A=s176-c-k-c0x00ffffff-no-rj"
+        degreeTitle="Bachelor of Science"
+        degreeMajor="Computer Science"
+        yearStart={2020}
+        yearEnd={2024}
       ></EducationSection>
 
       <ExperienceSection
-        workIcon={work}
-        position="Position"
-        employer="Employer"
-        startMonthYear="MM/YYYY"
-        endMonthYear="MM/YYYY"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        workIcon="https://motio.com/wp-content/uploads/2020/12/motio-logo.png"
+        position="Software Engineer Intern"
+        employer="Motio, Inc."
+        startMonthYear="05/2023"
+        endMonthYear="12/2023"
+        description="Worked on the MotioCI application, a specialized platform for managing and enhancing IBM Cognos BI (Business Intelligence) environments. Developed new responsive user interfaces using Angular JS, TypeScript, HTML, and CSS for the MotioCI application. Collaborated closely with the back-end team to integrate GraphQL APIs, ensuring efficient data retrieval and display. Translated design specifications into visually appealing and functional user interfaces for MotioCI. Actively participated in code reviews and agile development sprints to maintain and develop quality software."
       ></ExperienceSection>
 
       <SkillsSection
         skills={[
-          "Skills #1",
-          "Skills #2",
-          "Skills #3",
-          "Skills #4",
-          "Skills #5",
-          "Skills #6",
-          "Skills #7",
-          "Skills #8",
-          "Skills #9",
-          "Skills #10",
-          "Skills #11",
-          "Skills #12",
-          "Skills #13",
-          "Skills #14",
-          "Skills #15",
-          "Skills #16",
-          "Skills #17",
-          "Skills #18",
-          "Skills #19",
-          "Skills #20",
-          "Skills #21",
+          "TypeScript",
+          "Python",
+          "Java",
+          "C++",
+          "C",
+          "HTML",
+          "CSS",
+          "SQL",
+          "Jenkins",
+          "Jasmine",
+          "Docker",
+          "Markdown",
+          "Git",
+          "Angular",
+          "RxJs",
+          "Pocketbase",
+          "Firebase",
+          "Unix",
+          "Swing",
+          "Tkinter",
+          "GitLab",
         ]}
       ></SkillsSection>
 
       <CoursesSection
         Courses={[
-          "Class/Course #1",
-          "Class/Course #2",
-          "Class/Course #3",
-          "Class/Course #4",
-          "Class/Course #5",
-          "Class/Course #6",
-          "Class/Course #7",
-          "Class/Course #8",
+          "Data Structures",
+          "Programming in Unix",
+          "Algorithm Analysis",
+          "Database Management",
+          "Software Engineering",
+          "Object Oriented Design",
+          "Operating Systems",
+          "Machine Learning",
         ]}
       ></CoursesSection>
 
