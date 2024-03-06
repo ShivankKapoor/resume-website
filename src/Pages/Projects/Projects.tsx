@@ -23,8 +23,8 @@ function Projects() {
           projectIcon={timeToLeave}
         />
         <ProjectCard
-          projectName="Project Name"
-          projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta."
+          projectName="Drone Cast"
+          projectDesc="Developed a Python application that lets users know if it is safe to fly their drone. The front end was built using the Tkinter toolkit. Implements the Open Weather API to get weather conditions. Also Implements the IP-API to auto detect location."
           gitHubLink="https://github.com/ShivankKapoor/Drone-Cast"
           projectIcon={droneCase}
         />
