@@ -57,6 +57,7 @@ function Home() {
           "Angular",
           "RxJs",
           "Flask",
+          "Spring Boot",
           "RESTful APIs",
           "Firebase",
           "Unix",
