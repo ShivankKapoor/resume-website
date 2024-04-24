@@ -1,7 +1,7 @@
 .Navigation-Bar {
-    font-weight:bold;
+    font-weight: bold;
     position: sticky !important;
-    top: 0 !important;;
+    top: 0 !important;
 
     img {
         margin-left: 10px;
@@ -14,10 +14,15 @@
     }
 
     .active {
-        border-bottom: 1px solid black;
+        color: black;
+        border-bottom: 1px solid black !important;
     }
 
-    .mobile-navbar-button{
+    .mobile-navbar-button {
         margin-right: 2vw;
+    }
+
+    .nav-link:hover .nav-item {
+        border-bottom: 1px solid grey !important;
     }
 }
