@@ -23,6 +23,6 @@
     }
 
     .nav-link:hover .nav-item {
-        border-bottom: 1px solid grey !important;
+        border-bottom: 1px solid grey;
     }
 }
