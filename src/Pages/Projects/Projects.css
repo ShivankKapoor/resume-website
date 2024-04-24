@@ -3,3 +3,13 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .subFooterDiv {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .subFooter{
+      color: gray;
+    }
+  }
