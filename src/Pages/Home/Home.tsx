@@ -15,7 +15,7 @@ function Home() {
         firstName="Shivank"
         lastName="Kapoor"
         description="
-        Computer Science Student at the University of Texas at Dallas"
+        Computer Science Graduate from the University of Texas at Dallas"
         profilePicture="https://media.licdn.com/dms/image/D5603AQG-YIdZoHjVmg/profile-displayphoto-shrink_200_200/0/1666035409378?e=1721260800&v=beta&t=YDCkNMpeiV2KO1aovt4_6nk_ZqQSnSJBucs5XKZnsJI"
         linkedinLink="https://www.linkedin.com/in/shivankkapoor/"
         githubLink="https://github.com/ShivankKapoor"
