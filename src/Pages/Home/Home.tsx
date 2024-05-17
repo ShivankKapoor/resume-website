@@ -16,7 +16,7 @@ function Home() {
         lastName="Kapoor"
         description="
         Computer Science Student at the University of Texas at Dallas"
-        profilePicture="https://media.licdn.com/dms/image/D5603AQG-YIdZoHjVmg/profile-displayphoto-shrink_200_200/0/1666035409378?e=1715212800&v=beta&t=n3P4Iro_psOBVr1iDmwGNL6wkJBX_lEFXxDw0ssngFc"
+        profilePicture="https://media.licdn.com/dms/image/D5603AQG-YIdZoHjVmg/profile-displayphoto-shrink_200_200/0/1666035409378?e=1721260800&v=beta&t=YDCkNMpeiV2KO1aovt4_6nk_ZqQSnSJBucs5XKZnsJI"
         linkedinLink="https://www.linkedin.com/in/shivankkapoor/"
         githubLink="https://github.com/ShivankKapoor"
       ></ProfileOverviewCard>
@@ -31,7 +31,7 @@ function Home() {
       ></EducationSection>
 
       <ExperienceSection
-        workIcon="https://motio.com/wp-content/uploads/2020/12/motio-logo.png"
+        workIcon="https://media.licdn.com/dms/image/C560BAQGJUKPPfQwLjw/company-logo_200_200/0/1630656195363/motio_inc__logo?e=1723680000&v=beta&t=Lz4gxLznsqZmLeeBz2AMGk4utvShtuIsN_MCamKBn7k"
         position="Software Engineer Intern"
         employer="Motio, Inc."
         startMonthYear="05/2023"
