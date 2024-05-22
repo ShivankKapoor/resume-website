@@ -30,9 +30,9 @@ export const ExperienceSection: FunctionComponent<
             <h6>{employer}</h6>
             <text>{startMonthYear} - {endMonthYear}</text>
             <div className="experience-description">
-              <text>
+              <p>
                 {description}
-              </text>
+              </p>
             </div>
           </div>
         </Card.Body>
