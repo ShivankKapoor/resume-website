@@ -27,9 +27,9 @@ export const SkillsSection: FunctionComponent<skillsSectionProps> = ({
               <div key={index} className="col">
                 <ul className="list-group list-group-flush">
                   {chunk.map((skill, skillIndex) => (
-                    <li key={skillIndex} className="list-group-item">
+                    <text key={skillIndex} className="list-group-item">
                       {skill}
-                    </li>
+                    </text>
                   ))}
                 </ul>
               </div>
