@@ -11,18 +11,40 @@
 
     .nav-item {
         padding-right: 1px;
+        position: relative;
     }
 
     .active {
         color: black;
-        border-bottom: 1px solid black !important;
+        border-bottom: 2px solid grey !important;
     }
 
     .mobile-navbar-button {
         margin-right: 2vw;
     }
 
+    .nav-link {
+        color: inherit;
+        text-decoration: none;
+    }
+
     .nav-link:hover .nav-item {
-        border-bottom: 1px solid grey;
+        color: black;
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition: width 0.15s ease-in-out, left 0.15s ease-in-out;
+    }
+
+    .nav-link:hover .nav-item::after {
+        width: 100%;
+        left: 0;
     }
 }

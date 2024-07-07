@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import "./Navibar.css";
 import logo from "./logo.png";
+
 function Navibar() {
   const location = useLocation().pathname;
 
