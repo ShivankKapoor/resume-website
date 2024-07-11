@@ -9,6 +9,10 @@
         padding-right: 1vw;
     }
 
+    .logo-img{
+        cursor: pointer;
+    }
+
     .nav-item {
         padding-right: 1px;
         position: relative;

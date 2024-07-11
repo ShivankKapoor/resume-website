@@ -12,7 +12,7 @@ function Navibar() {
 
   return (
     <Navbar sticky="top" collapseOnSelect expand="sm" bg="light" variant="light" className="Navigation-Bar">
-      <img src={logo} alt="Shivank Kapoor" onClick={handleClick}/>
+      <img className="logo-img" src={logo} alt="Shivank Kapoor" onClick={handleClick}/>
       <Navbar.Toggle className="mobile-navbar-button" aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
