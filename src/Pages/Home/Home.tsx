@@ -5,6 +5,7 @@ import EducationSection from "../../Components/Education-Section/EducationSectio
 import edu from "./edu.png";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 import work from "./work.png";
+import shivank_pic from "./shivank_pic.jpeg"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
@@ -16,7 +17,7 @@ function Home() {
         lastName="Kapoor"
         description="
         Computer Science Graduate from the University of Texas at Dallas"
-        profilePicture="https://media.licdn.com/dms/image/D5603AQG-YIdZoHjVmg/profile-displayphoto-shrink_200_200/0/1666035409378?e=1721260800&v=beta&t=YDCkNMpeiV2KO1aovt4_6nk_ZqQSnSJBucs5XKZnsJI"
+        profilePicture={shivank_pic}
         linkedinLink="https://www.linkedin.com/in/shivankkapoor/"
         githubLink="https://github.com/ShivankKapoor"
       ></ProfileOverviewCard>
