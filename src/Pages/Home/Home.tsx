@@ -1,10 +1,9 @@
 import "./Home.css";
 import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileOverviewCard";
-import profile from "./profile.jpg";
 import EducationSection from "../../Components/Education-Section/EducationSection";
-import edu from "./edu.png";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
-import shivank_pic from "./shivank_pic.jpeg";
+import shivank_pic from "../../Assets/shivank_pic.jpeg";
+import motio from "../../Assets/motio.jpg"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
@@ -18,7 +17,7 @@ const experiences = [
   //   description: "                                                                                                                                                                                  ",
   // },
   {
-    workIcon: "https://media.licdn.com/dms/image/C560BAQGJUKPPfQwLjw/company-logo_200_200/0/1630656195363/motio_inc__logo?e=1723680000&v=beta&t=Lz4gxLznsqZmLeeBz2AMGk4utvShtuIsN_MCamKBn7k",
+    workIcon: motio,
     position: "Software Engineer Intern",
     employer: "Motio, Inc.",
     startMonthYear: "05/2023",
