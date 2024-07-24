@@ -18,7 +18,7 @@ export const ExperienceSection: FunctionComponent<
         </Card.Header>
         <Card.Body className="flex-column">
           {experiences.map((experience, index) => (
-            <div key={index} className="experience-item">
+            <div key={index} className={`experience-item ${index !== 0 ? 'experience-item-old' : ''}`}>
               <div className="experience-image-container">
                 <img className="experience-image" src={experience.workIcon} alt="Experience Icon" />
               </div>

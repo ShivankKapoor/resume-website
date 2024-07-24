@@ -35,8 +35,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 0;
     position: relative;
+    padding-bottom: 1.5vh;
+}
+
+.experience-item-old{
+    padding-top: 1.5vh;
+    padding-bottom: 0 !important;
+    border-top: 1px solid #ccc;
 }
 
 .experience-item:not(:last-child)::after {
