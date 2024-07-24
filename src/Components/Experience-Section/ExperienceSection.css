@@ -25,16 +25,39 @@
     width: 10vh;
 }
 
-.flex-row {
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.experience-item {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    padding-bottom: 1.5vh;
+}
+
+.experience-item-old{
+    padding-top: 1.5vh;
+    padding-bottom: 0 !important;
+    border-top: 1px solid #ccc;
+}
+
+.experience-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .experience-image-container {
     margin-right: 10px;
 }
 
-.experience-description{
-    padding-top: .25vh;
+.experience-description {
+    padding-top: 0.25vh;
 }

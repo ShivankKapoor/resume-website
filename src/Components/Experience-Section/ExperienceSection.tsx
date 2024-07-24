@@ -1,40 +1,37 @@
 import { FunctionComponent } from "react";
 import "./ExperienceSection.css";
 import { Card } from "react-bootstrap";
-
+import { Experience } from "../../objects/Experience";
 
 type ExperienceSectionProps = {
-  workIcon: string,
-  position: string,
-  employer: string,
-  startMonthYear: string,
-  endMonthYear: string,
-  description: string,
+  experiences: Experience[],
 };
 
 export const ExperienceSection: FunctionComponent<
   ExperienceSectionProps
-> = ({ workIcon, position, employer, startMonthYear, endMonthYear, description }) => {
+> = ({ experiences }) => {
   return (
     <div className="experience-info-card">
-      <Card>
+      <Card className="experience-card">
         <Card.Header>
           <h3>Experience</h3>
         </Card.Header>
-        <Card.Body className="flex-row">
-          <div className="experience-image-container">
-            <img className="experience-image" src={workIcon} alt="Education Icon" />
-          </div>
-          <div className="experience-info-container">
-            <h5>{position}</h5>
-            <h6>{employer}</h6>
-            <text>{startMonthYear} - {endMonthYear}</text>
-            <div className="experience-description">
-              <p>
-                {description}
-              </p>
+        <Card.Body className="flex-column">
+          {experiences.map((experience, index) => (
+            <div key={index} className={`experience-item ${index !== 0 ? 'experience-item-old' : ''}`}>
+              <div className="experience-image-container">
+                <img className="experience-image" src={experience.workIcon} alt="Experience Icon" />
+              </div>
+              <div className="experience-info-container">
+                <h5>{experience.position}</h5>
+                <h6>{experience.employer}</h6>
+                <text>{experience.startMonthYear} - {experience.endMonthYear}</text>
+                <div className="experience-description">
+                  <p>{experience.description}</p>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </Card.Body>
       </Card>
     </div>
