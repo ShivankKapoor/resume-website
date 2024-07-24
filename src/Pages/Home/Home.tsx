@@ -9,14 +9,14 @@ import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
 const experiences = [
-  {
-    workIcon: "https://media.licdn.com/dms/image/C4D0BAQHqeZSnWA1HeA/company-logo_200_200/0/1637682620142/blackhawk_network_logo?e=1729728000&v=beta&t=ujfZM83PPIyh3Y6n0A4Wk9nNq5s_-Bv8bFP2r4GJ5PI",
-    position: "Software Engineer",
-    employer: "Blackhawk Network",
-    startMonthYear: "07/2024",
-    endMonthYear: "Present",
-    description: "                                                                                                                                                                                  ",
-  },
+  // {
+  //   workIcon: "https://media.licdn.com/dms/image/C4D0BAQHqeZSnWA1HeA/company-logo_200_200/0/1637682620142/blackhawk_network_logo?e=1729728000&v=beta&t=ujfZM83PPIyh3Y6n0A4Wk9nNq5s_-Bv8bFP2r4GJ5PI",
+  //   position: "Software Engineer",
+  //   employer: "Blackhawk Network",
+  //   startMonthYear: "07/2024",
+  //   endMonthYear: "Present",
+  //   description: "                                                                                                                                                                                  ",
+  // },
   {
     workIcon: "https://media.licdn.com/dms/image/C560BAQGJUKPPfQwLjw/company-logo_200_200/0/1630656195363/motio_inc__logo?e=1723680000&v=beta&t=Lz4gxLznsqZmLeeBz2AMGk4utvShtuIsN_MCamKBn7k",
     position: "Software Engineer Intern",
