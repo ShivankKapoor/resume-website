@@ -1,10 +1,8 @@
-import React from "react";
 import ProjectCard from "../../Components/Project-card/ProjectCard";
 import "./Projects.css";
-import projectImage from "./project.png";
-import reelRater from "./popcorn.png"
-import Attendance from "./tracker.png"
-import GPA from "./GPA.png"
+import reelRater from "../../Assets/popcorn.png"
+import Attendance from "../../Assets/tracker.png"
+import GPA from "../../Assets/GPA.png"
 
 function Projects() {
   return (
