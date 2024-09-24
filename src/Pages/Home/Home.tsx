@@ -3,20 +3,21 @@ import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileO
 import EducationSection from "../../Components/Education-Section/EducationSection";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 import shivank_pic from "../../Assets/shivank_pic.jpeg";
+import BHN from "../../Assets/BHN.jpg"
 import motio from "../../Assets/motio.jpg"
 import UTD from "../../Assets/UTD.jpg"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
 const experiences = [
-  // {
-  //   workIcon: "https://media.licdn.com/dms/image/C4D0BAQHqeZSnWA1HeA/company-logo_200_200/0/1637682620142/blackhawk_network_logo?e=1729728000&v=beta&t=ujfZM83PPIyh3Y6n0A4Wk9nNq5s_-Bv8bFP2r4GJ5PI",
-  //   position: "Software Engineer",
-  //   employer: "Blackhawk Network",
-  //   startMonthYear: "07/2024",
-  //   endMonthYear: "Present",
-  //   description: "                                                                                                                                                                                  ",
-  // },
+  {
+    workIcon: BHN,
+    position: "Software Engineer",
+    employer: "Blackhawk Network",
+    startMonthYear: "07/2024",
+    endMonthYear: "Present",
+    description: "                                                                                                                                                                                  ",
+  },
   {
     workIcon: motio,
     position: "Software Engineer Intern",
