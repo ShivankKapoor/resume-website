@@ -4,11 +4,13 @@ import Home from "./Pages/Home/Home";
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
+import ScrollToTop from "./Services/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div>
+      <ScrollToTop />
         <Navibar />
         <Routes>
           <Route path='/' element={<Home />} />
