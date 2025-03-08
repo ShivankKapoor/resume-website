@@ -36,7 +36,7 @@ const skillsList = [
   { skillName: "C", devIconName: "devicon-c-plain" },
   { skillName: "HTML", devIconName: "devicon-html5-plain" },
   { skillName: "CSS", devIconName: "devicon-css3-plain" },
-  { skillName: "SQL", devIconName: "devicon-postgresql-plain" },
+  { skillName: "SQL", devIconName: "devicon-azuresqldatabase-plain" },
   { skillName: "Jenkins", devIconName: "devicon-jenkins-line" },
   { skillName: "Jasmine", devIconName: "devicon-jasmine-plain" },
   { skillName: "Docker", devIconName: "devicon-docker-plain" },
