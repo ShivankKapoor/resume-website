@@ -46,7 +46,6 @@ const skillsList = [
   { skillName: "RxJs", devIconName: "devicon-rxjs-plain" },
   { skillName: "Flask", devIconName: "devicon-flask-original" },
   { skillName: "Spring Boot", devIconName: "devicon-spring-plain" },
-  { skillName: "RESTful APIs", devIconName: "devicon-nodejs-plain" },
   { skillName: "Firebase", devIconName: "devicon-firebase-plain" },
   { skillName: "Unix", devIconName: "devicon-linux-plain" },
   { skillName: "Swing", devIconName: "devicon-java-plain" },
