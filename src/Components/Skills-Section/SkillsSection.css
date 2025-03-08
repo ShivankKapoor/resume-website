@@ -1,21 +1,27 @@
 .skills-info-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
 }
 
 .skills-card-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.skill-item{
+.skill-item {
   margin-right: .1vw;
 }
 
 
 .list-group-item {
-    white-space: nowrap;
-  }
+  white-space: nowrap;
+}
+
+.skill-icon {
+  font-size: 20px;
+  padding-right: 1vw;
+  /* Adjust icon size */
+}
