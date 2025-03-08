@@ -28,6 +28,32 @@ const experiences = [
   }
 ];
 
+const skillsList = [
+  { skillName: "TypeScript", devIconName: "devicon-typescript-plain" },
+  { skillName: "Python", devIconName: "devicon-python-plain" },
+  { skillName: "Java", devIconName: "devicon-java-plain" },
+  { skillName: "C++", devIconName: "devicon-cplusplus-plain" },
+  { skillName: "C", devIconName: "devicon-c-plain" },
+  { skillName: "HTML", devIconName: "devicon-html5-plain" },
+  { skillName: "CSS", devIconName: "devicon-css3-plain" },
+  { skillName: "SQL", devIconName: "devicon-postgresql-plain" },
+  { skillName: "Jenkins", devIconName: "devicon-jenkins-line" },
+  { skillName: "Jasmine", devIconName: "devicon-jasmine-plain" },
+  { skillName: "Docker", devIconName: "devicon-docker-plain" },
+  { skillName: "Markdown", devIconName: "devicon-markdown-original" },
+  { skillName: "Git", devIconName: "devicon-git-plain" },
+  { skillName: "Angular", devIconName: "devicon-angularjs-plain" },
+  { skillName: "RxJs", devIconName: "devicon-rxjs-plain" },
+  { skillName: "Flask", devIconName: "devicon-flask-original" },
+  { skillName: "Spring Boot", devIconName: "devicon-spring-plain" },
+  { skillName: "RESTful APIs", devIconName: "devicon-nodejs-plain" },
+  { skillName: "Firebase", devIconName: "devicon-firebase-plain" },
+  { skillName: "Unix", devIconName: "devicon-linux-plain" },
+  { skillName: "Swing", devIconName: "devicon-java-plain" },
+  { skillName: "Tkinter", devIconName: "devicon-python-plain" },
+  { skillName: "GitLab", devIconName: "devicon-gitlab-plain" },
+];
+
 function Home() {
   return (
     <>
@@ -53,33 +79,7 @@ function Home() {
         experiences={experiences}
       />
 
-      <SkillsSection
-        skills={[
-          "TypeScript",
-          "Python",
-          "Java",
-          "C++",
-          "C",
-          "HTML",
-          "CSS",
-          "SQL",
-          "Jenkins",
-          "Jasmine",
-          "Docker",
-          "Markdown",
-          "Git",
-          "Angular",
-          "RxJs",
-          "Flask",
-          "Spring Boot",
-          "RESTful APIs",
-          "Firebase",
-          "Unix",
-          "Swing",
-          "Tkinter",
-          "GitLab",
-        ]}
-      />
+      <SkillsSection skills={skillsList} />
 
       <CoursesSection
         Courses={[

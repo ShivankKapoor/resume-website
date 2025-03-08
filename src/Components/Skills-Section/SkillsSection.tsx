@@ -1,35 +1,10 @@
 import React, { FunctionComponent } from "react";
 import "./SkillsSection.css";
 import { Card } from "react-bootstrap";
+import { Skill } from "../../objects/Skill";
 
 type skillsSectionProps = {
-  skills: string[];
-};
-
-const skillIcons: { [key: string]: string } = {
-  "TypeScript": "devicon-typescript-plain",
-  "Python": "devicon-python-plain",
-  "Java": "devicon-java-plain",
-  "C++": "devicon-cplusplus-plain",
-  "C": "devicon-c-plain",
-  "HTML": "devicon-html5-plain",
-  "CSS": "devicon-css3-plain",
-  "SQL": "devicon-postgresql-plain",
-  "Jenkins": "devicon-jenkins-line",
-  "Jasmine": "devicon-jasmine-plain",
-  "Docker": "devicon-docker-plain",
-  "Markdown": "devicon-markdown-original",
-  "Git": "devicon-git-plain",
-  "Angular": "devicon-angularjs-plain",
-  "RxJs": "devicon-rxjs-original",
-  "Flask": "devicon-flask-original",
-  "Spring Boot": "devicon-spring-plain",
-  "RESTful APIs": "devicon-nodejs-plain",
-  "Firebase": "devicon-firebase-plain",
-  "Unix": "devicon-linux-plain",
-  "Swing": "devicon-java-plain",
-  "Tkinter": "devicon-python-plain",
-  "GitLab": "devicon-gitlab-plain",
+  skills: Skill[];
 };
 
 export const SkillsSection: FunctionComponent<skillsSectionProps> = ({
@@ -53,8 +28,8 @@ export const SkillsSection: FunctionComponent<skillsSectionProps> = ({
                 <ul className="list-group list-group-flush">
                   {chunk.map((skill, skillIndex) => (
                     <li key={skillIndex} className="list-group-item skill-item">
-                      <i className={`${skillIcons[skill] || "devicon-devicon-plain"} skill-icon`}></i>
-                      {skill}
+                      <i className={`${skill.devIconName} skill-icon`}></i>
+                      {skill.skillName}
                     </li>
                   ))}
                 </ul>
