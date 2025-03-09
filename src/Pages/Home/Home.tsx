@@ -48,8 +48,8 @@ const skillsList = [
   { skillName: "Spring Boot", devIconName: "devicon-spring-plain" },
   { skillName: "Firebase", devIconName: "devicon-firebase-plain" },
   { skillName: "Unix", devIconName: "devicon-linux-plain" },
-  { skillName: "Swing", devIconName: "devicon-java-plain" },
-  { skillName: "Tkinter", devIconName: "devicon-python-plain" },
+  { skillName: "Karate API Testing", devIconName: "devicon-karatelabs-plain" },
+  { skillName: "Maven", devIconName: "devicon-maven-plain" },
   { skillName: "GitLab", devIconName: "devicon-gitlab-plain" },
 ];
 
