@@ -1,15 +1,15 @@
 import React, { FunctionComponent } from "react";
 import "./SkillsSection.css";
 import { Card } from "react-bootstrap";
+import { Skill } from "../../objects/Skill";
 
 type skillsSectionProps = {
-  skills: any[];
+  skills: Skill[];
 };
 
 export const SkillsSection: FunctionComponent<skillsSectionProps> = ({
   skills,
 }) => {
-  // Splitting skills into four equal parts
   const chunkSize = Math.ceil(skills.length / 4);
   const chunkedSkills = Array.from({ length: 4 }, (_, i) =>
     skills.slice(i * chunkSize, (i + 1) * chunkSize)
@@ -27,9 +27,10 @@ export const SkillsSection: FunctionComponent<skillsSectionProps> = ({
               <div key={index} className="col">
                 <ul className="list-group list-group-flush">
                   {chunk.map((skill, skillIndex) => (
-                    <text key={skillIndex} className="list-group-item">
-                      {skill}
-                    </text>
+                    <li key={skillIndex} className="list-group-item skill-item">
+                      <i className={`${skill.devIconName} skill-icon`}></i>
+                      {skill.skillName}
+                    </li>
                   ))}
                 </ul>
               </div>
