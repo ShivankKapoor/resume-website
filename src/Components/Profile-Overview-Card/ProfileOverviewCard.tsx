@@ -25,7 +25,7 @@ export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = 
                 <img
                     src={profilePicture}
                     className="rounded mx-auto d-block profile-image"
-                    alt="Profile Image"
+                    alt="Profile"
                 />
             </div>
             <div className="title-card">

@@ -26,7 +26,7 @@ const maxWidth = 800;
 type PDFFile = string | File | null;
 
 export default function PDFSection() {
-  const [file, setFile] = useState<PDFFile>('./ONLINE.pdf');
+  const file: PDFFile = './ONLINE.pdf';
   const [numPages, setNumPages] = useState<number>();
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
   const [containerWidth, setContainerWidth] = useState<number>();
