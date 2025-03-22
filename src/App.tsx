@@ -9,7 +9,6 @@ import ScrollToTop from "./Services/ScrollToTop";
 function App() {
   return (
     <Router>
-      <h1>Firebase Deploy Test</h1>
       <div>
       <ScrollToTop />
         <Navibar />
