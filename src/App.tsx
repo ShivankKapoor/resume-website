@@ -5,12 +5,19 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
 import ScrollToTop from "./Services/ScrollToTop";
+import usePageTracker from "./hooks/usePageTracker";
+
+function PageTrackerWrapper() {
+  usePageTracker();
+  return null; // no UI needed
+}
 
 function App() {
   return (
     <Router>
+      <PageTrackerWrapper />
       <div>
-      <ScrollToTop />
+        <ScrollToTop />
         <Navibar />
         <Routes>
           <Route path='/' element={<Home />} />
