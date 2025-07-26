@@ -5,12 +5,20 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
 import ScrollToTop from "./Services/ScrollToTop";
+import usePageTracker from "./Hooks/usePageTracker";
+
+function PageTrackerWrapper() {
+  usePageTracker(); // Use the page tracker hook here
+  return null;
+}
 
 function App() {
+  // Removed duplicate useLogVisit() call from here
   return (
     <Router>
+      <PageTrackerWrapper />
       <div>
-      <ScrollToTop />
+        <ScrollToTop />
         <Navibar />
         <Routes>
           <Route path='/' element={<Home />} />
