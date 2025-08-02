@@ -16,6 +16,14 @@
     .nav-item {
         padding-right: 1px;
         position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav-icon {
+        font-size: 1.2em;
+        vertical-align: middle;
     }
 
     .active {
