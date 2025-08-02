@@ -1,9 +1,10 @@
 import "./App.css";
 import Navibar from "./Components/Navibar/Navibar";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
+import NotFound from "./Pages/404/NotFound";
 import ScrollToTop from "./Services/ScrollToTop";
 import usePageTracker from "./Hooks/usePageTracker";
 
@@ -24,7 +25,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
-          <Route path='*' element={<Navigate to="/" />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </Router>

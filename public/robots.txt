@@ -1,3 +1,19 @@
+# robots.txt for ShivankKapoor's resume website
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+Allow: /static/
+Allow: /index.html
+Allow: /ONLINE.pdf
+
+# Prevent access to source maps and license files
+Disallow: /*.js.map$
+Disallow: /*.css.map$
+Disallow: /*.LICENSE.txt$
+
+# Set crawl delay to be considerate to servers
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://shivankkapoor.com/sitemap.xml
