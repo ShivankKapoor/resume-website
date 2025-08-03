@@ -44,6 +44,18 @@ function Navibar() {
               </div>
             </Link>
           </Nav>
+          <Nav className="social-links">
+            <a href="https://www.linkedin.com/in/shivankkapoor/" target="_blank" rel="noopener noreferrer" className="nav-link social-link">
+              <div className="nav-item">
+                <span>{BsIcons.BsLinkedin({ 'aria-label': 'LinkedIn' })}</span>
+              </div>
+            </a>
+            <a href="https://github.com/ShivankKapoor" target="_blank" rel="noopener noreferrer" className="nav-link social-link">
+              <div className="nav-item">
+                <span>{BsIcons.BsGithub({ 'aria-label': 'GitHub' })}</span>
+              </div>
+            </a>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     </IconContext.Provider>

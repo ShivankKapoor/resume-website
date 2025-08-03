@@ -40,6 +40,10 @@
         text-decoration: none;
     }
 
+    .social-links{
+        padding-right: 1rem !important;
+    }
+
     .nav-link:hover .nav-item {
         color: black;
     }
@@ -58,5 +62,32 @@
     .nav-link:hover .nav-item::after {
         width: 100%;
         left: 0;
+    }
+
+    .social-link {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .social-link .nav-item {
+        font-size: 1.2em;
+    }
+
+    Nav:last-child {
+        padding-right: 2rem;
+        margin-left: 1rem;
+    }
+
+    .social-link .nav-item::after {
+        display: none;
+    }
+
+    .social-link:hover {
+        opacity: 0.7;
+    }
+
+    @media (max-width: 575.98px) {
+        .social-link {
+            display: none;
+        }
     }
 }
