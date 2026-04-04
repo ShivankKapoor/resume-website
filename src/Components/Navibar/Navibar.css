@@ -108,8 +108,26 @@
         display: none;
     }
 
+    /* mobile-controls wraps the toggle + hamburger on small screens */
+    .mobile-controls {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    /* On desktop, hide the mobile toggle (the one in mobile-controls) */
+    @media (min-width: 576px) {
+        .mobile-controls .theme-toggle {
+            display: none;
+        }
+    }
+
+    /* On mobile, hide the desktop toggle (inside the collapsed nav) */
     @media (max-width: 575.98px) {
         .social-link {
+            display: none;
+        }
+        .desktop-theme-toggle {
             display: none;
         }
     }

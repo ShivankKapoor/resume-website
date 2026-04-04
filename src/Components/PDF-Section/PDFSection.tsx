@@ -1,8 +1,9 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { useResizeObserver } from '@wojtekmaj/react-hooks';
 import { pdfjs, Document, Page } from 'react-pdf';
+import * as BsIcons from "react-icons/bs";
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
@@ -30,6 +31,20 @@ export default function PDFSection() {
   const [numPages, setNumPages] = useState<number>();
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
   const [containerWidth, setContainerWidth] = useState<number>();
+  const [showOriginal, setShowOriginal] = useState(false);
+  const [isDark, setIsDark] = useState(
+    document.documentElement.getAttribute("data-bs-theme") === "dark"
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const dark = document.documentElement.getAttribute("data-bs-theme") === "dark";
+      setIsDark(dark);
+      if (!dark) setShowOriginal(false);
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-bs-theme"] });
+    return () => observer.disconnect();
+  }, []);
 
   const onResize = useCallback<ResizeObserverCallback>((entries) => {
     const [entry] = entries;
@@ -51,7 +66,17 @@ export default function PDFSection() {
         <div className="PDF__container__load">
           <label htmlFor="file"></label>{' '}
         </div>
-        <div className="PDF__container__document" ref={setContainerRef}>
+        {isDark && (
+          <button
+            className="pdf-view-toggle"
+            onClick={() => setShowOriginal(prev => !prev)}
+          >
+            {showOriginal
+              ? <>{BsIcons.BsMoon({ 'aria-label': 'View Dark' })} View Dark</>
+              : <>{BsIcons.BsSun({ 'aria-label': 'View Original' })} View Original</>}
+          </button>
+        )}
+        <div className={`PDF__container__document${isDark && !showOriginal ? ' pdf-dark' : ''}`} ref={setContainerRef}>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
             {Array.from(new Array(numPages), (el, index) => (
               <Page

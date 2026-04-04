@@ -27,7 +27,20 @@ function Navibar() {
     <IconContext.Provider value={{ className: "nav-icon" }}>
       <Navbar sticky="top" collapseOnSelect expand="sm" className="Navigation-Bar">
         <img className="logo-img" src={logo} alt="Shivank Kapoor" onClick={handleClick}/>
-        <Navbar.Toggle className="mobile-navbar-button" aria-controls="responsive-navbar-nav" />
+        <div className="mobile-controls">
+          <button
+            className="theme-toggle"
+            onClick={() => setIsDark(prev => !prev)}
+            aria-label="Toggle dark mode"
+          >
+            <div className="nav-item">
+              {isDark
+                ? <span>{BsIcons.BsSun({ 'aria-label': 'Light mode' })}</span>
+                : <span>{BsIcons.BsMoon({ 'aria-label': 'Dark mode' })}</span>}
+            </div>
+          </button>
+          <Navbar.Toggle className="mobile-navbar-button" aria-controls="responsive-navbar-nav" />
+        </div>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Link to="/" className="nav-link">
@@ -67,7 +80,7 @@ function Navibar() {
               </div>
             </a>
             <button
-              className="theme-toggle nav-link"
+              className="theme-toggle nav-link desktop-theme-toggle"
               onClick={() => setIsDark(prev => !prev)}
               aria-label="Toggle dark mode"
             >
