@@ -42,7 +42,7 @@
 .experience-item-old{
     padding-top: 1.5vh;
     padding-bottom: 0 !important;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border-color);
 }
 
 .experience-item:not(:last-child)::after {
@@ -65,7 +65,7 @@
 .experience-overall-dates {
     display: block;
     font-size: 1.6vh;
-    color: #6c757d;
+    color: var(--text-secondary);
     margin-bottom: 1.2vh;
 }
 
@@ -91,7 +91,7 @@
     top: calc(0.5vh + 8px);
     bottom: -1.2vh;
     width: 2px;
-    background-color: #dee2e6;
+    background-color: var(--timeline-line);
 }
 
 .role-item::before {
@@ -102,7 +102,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #6c757d;
+    background-color: var(--timeline-dot);
 }
 
 .role-position {
@@ -114,5 +114,5 @@
 .role-date {
     display: block;
     font-size: 1.4vh;
-    color: #6c757d;
+    color: var(--text-secondary);
 }

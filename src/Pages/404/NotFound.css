@@ -1,5 +1,5 @@
 .notfound {
-  background-color: #f5f5f5;
+  background-color: var(--notfound-bg);
   margin: 0;
   padding: 1rem;
   padding-top: 0rem !important;
@@ -18,10 +18,10 @@
 
   max-height: 90vh;
 
-  background: white;
+  background: var(--notfound-card);
   padding: 2rem 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px var(--shadow-sm);
 
   overflow-y: auto;
   box-sizing: border-box;
@@ -37,14 +37,14 @@
 }
 
 .notfound-title {
-  color: #333;
+  color: var(--notfound-title);
   font-size: 2rem;
   margin: 0.5rem 0;
   word-wrap: break-word;
 }
 
 .notfound-text {
-  color: #666;
+  color: var(--notfound-text);
   font-size: 1.125rem;
   margin: 1rem 0;
   word-wrap: break-word;
