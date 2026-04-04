@@ -44,6 +44,26 @@ body {
   .PDF__container__document .react-pdf__Page {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   }
+
+  .PDF__container__document.pdf-dark .react-pdf__Page {
+    filter: invert(0.85);
+  }
+
+  .pdf-view-toggle {
+    margin-bottom: 1rem;
+    padding: 0.4rem 1rem;
+    background: #1f1f1f;
+    color: #dddddd;
+    border: 1px solid #3a3a3a;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.15s ease;
+  }
+
+  .pdf-view-toggle:hover {
+    background: #2e2e2e;
+  }
   
   .PDF__container__document .react-pdf__message {
     color: white;
