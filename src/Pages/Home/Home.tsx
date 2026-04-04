@@ -4,7 +4,7 @@ import EducationSection from "../../Components/Education-Section/EducationSectio
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
 import shivank_pic from "../../Assets/shivank_pic.jpeg";
 import BHN from "../../Assets/BHN.jpg"
-import motio from "../../Assets/motio.jpg"
+import motio from "../../Assets/motio.png"
 import UTD from "../../Assets/UTD.jpg"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 
