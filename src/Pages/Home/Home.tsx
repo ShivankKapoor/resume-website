@@ -12,11 +12,25 @@ import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 const experiences = [
   {
     workIcon: BHN,
-    position: "Software Engineer",
+    position: "Software Engineer II",
     employer: "Blackhawk Network",
     startMonthYear: "07/2024",
     endMonthYear: "Present",
-    description: "                                                                                                                                                                                  ",
+    description: "",
+    roles: [
+      {
+        position: "Software Engineer II",
+        startMonthYear: "03/2026",
+        endMonthYear: "Present",
+        description: "",
+      },
+      {
+        position: "Software Engineer",
+        startMonthYear: "07/2024",
+        endMonthYear: "03/2026",
+        description: "",
+      },
+    ],
   },
   {
     workIcon: motio,
@@ -24,7 +38,15 @@ const experiences = [
     employer: "Motio, Inc.",
     startMonthYear: "05/2023",
     endMonthYear: "12/2023",
-    description: "Worked on the MotioCI application, a specialized platform for managing and enhancing IBM Cognos BI (Business Intelligence) environments. Developed new responsive user interfaces using Angular JS, TypeScript, HTML, and CSS for the MotioCI application. Collaborated closely with the back-end team to integrate GraphQL APIs, ensuring efficient data retrieval and display. Translated design specifications into visually appealing and functional user interfaces for MotioCI. Actively participated in code reviews and agile development sprints to maintain and develop quality software.",
+    description: "",
+    roles: [
+      {
+        position: "Software Engineer Intern",
+        startMonthYear: "05/2023",
+        endMonthYear: "12/2023",
+        description: "Worked on the MotioCI application, a specialized platform for managing and enhancing IBM Cognos BI (Business Intelligence) environments. Developed new responsive user interfaces using Angular JS, TypeScript, HTML, and CSS for the MotioCI application. Collaborated closely with the back-end team to integrate GraphQL APIs, ensuring efficient data retrieval and display. Translated design specifications into visually appealing and functional user interfaces for MotioCI. Actively participated in code reviews and agile development sprints to maintain and develop quality software.",
+      }
+    ],
   }
 ];
 

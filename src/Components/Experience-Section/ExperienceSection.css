@@ -61,3 +61,58 @@
 .experience-description {
     padding-top: 0.25vh;
 }
+
+.experience-overall-dates {
+    display: block;
+    font-size: 1.6vh;
+    color: #6c757d;
+    margin-bottom: 1.2vh;
+}
+
+.roles-timeline {
+    margin-left: 0.4vh;
+    padding-left: 1.6vh;
+    margin-top: 0.4vh;
+}
+
+.role-item {
+    position: relative;
+    margin-bottom: 1.2vh;
+}
+
+.role-item:last-child {
+    margin-bottom: 0;
+}
+
+.role-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: calc(-1.6vh - 2px);
+    top: calc(0.5vh + 8px);
+    bottom: -1.2vh;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.role-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.6vh - 5px);
+    top: 0.5vh;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6c757d;
+}
+
+.role-position {
+    display: block;
+    font-weight: 600;
+    font-size: 1.8vh;
+}
+
+.role-date {
+    display: block;
+    font-size: 1.4vh;
+    color: #6c757d;
+}
