@@ -25,26 +25,26 @@
 }
 
 [data-bs-theme="dark"] {
-  --bg-primary: #0f0f1a;
-  --text-primary: #dcdce8;
-  --text-secondary: #9090b0;
-  --border-color: #2e2e4a;
-  --card-bg: #1a1a30;
-  --card-border: rgba(255, 255, 255, 0.07);
-  --navbar-bg: #12121f;
-  --nav-text: #ccccdf;
+  --bg-primary: #000000;
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --border-color: #2a2a2a;
+  --card-bg: #111111;
+  --card-border: rgba(255, 255, 255, 0.05);
+  --navbar-bg: #0a0a0a;
+  --nav-text: #dddddd;
   --nav-active: #ffffff;
   --nav-underline: #ffffff;
-  --timeline-line: #2e2e4a;
-  --timeline-dot: #7070a0;
+  --timeline-line: #2a2a2a;
+  --timeline-dot: #777777;
   --shadow-sm: rgba(0, 0, 0, 0.4);
-  --notfound-bg: #0f0f1a;
-  --notfound-card: #1a1a30;
-  --notfound-title: #dcdce8;
-  --notfound-text: #9090b0;
-  --github-btn-bg: #3a3a5e;
-  --show-code-btn-bg: #3a3a5e;
-  --footer-text: #9090b0;
+  --notfound-bg: #000000;
+  --notfound-card: #111111;
+  --notfound-title: #f0f0f0;
+  --notfound-text: #888888;
+  --github-btn-bg: #2a2a2a;
+  --show-code-btn-bg: #2a2a2a;
+  --footer-text: #888888;
 }
 
 body {
