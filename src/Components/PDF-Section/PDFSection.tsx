@@ -75,8 +75,8 @@ export default function PDFSection() {
             onClick={() => setShowOriginal(prev => !prev)}
           >
             {showOriginal
-              ? <>{BsIcons.BsMoon({ 'aria-label': 'View Dark' })} View Dark</>
-              : <>{BsIcons.BsSun({ 'aria-label': 'View Original' })} View Original</>}
+              ? <><span key="moon" className="pdf-toggle-icon">{BsIcons.BsMoon({ 'aria-label': 'View Dark' })}</span> View Dark</>
+              : <><span key="sun" className="pdf-toggle-icon">{BsIcons.BsSun({ 'aria-label': 'View Original' })}</span> View Original</>}
           </button>
         )}
         <div className={`PDF__container__document${isDark && !showOriginal ? ' pdf-dark' : ''}`} ref={setContainerRef}>

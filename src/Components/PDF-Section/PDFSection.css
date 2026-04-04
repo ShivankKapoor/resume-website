@@ -64,6 +64,13 @@ body {
   .pdf-view-toggle:hover {
     background: #2e2e2e;
   }
+
+  .pdf-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.35rem;
+    animation: theme-icon-appear 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
   
   .PDF__container__document .react-pdf__message {
     color: white;

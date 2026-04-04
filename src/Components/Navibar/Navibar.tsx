@@ -34,9 +34,11 @@ function Navibar() {
             aria-label="Toggle dark mode"
           >
             <div className="nav-item">
-              {isDark
-                ? <span>{BsIcons.BsSun({ 'aria-label': 'Light mode' })}</span>
-                : <span>{BsIcons.BsMoon({ 'aria-label': 'Dark mode' })}</span>}
+              <span key={isDark ? 'sun-mobile' : 'moon-mobile'} className="theme-toggle-icon">
+                {isDark
+                  ? BsIcons.BsSun({ 'aria-label': 'Light mode' })
+                  : BsIcons.BsMoon({ 'aria-label': 'Dark mode' })}
+              </span>
             </div>
           </button>
           <Navbar.Toggle className="mobile-navbar-button" aria-controls="responsive-navbar-nav" />
@@ -85,9 +87,11 @@ function Navibar() {
               aria-label="Toggle dark mode"
             >
               <div className="nav-item">
-                {isDark
-                  ? <span>{BsIcons.BsSun({ 'aria-label': 'Light mode' })}</span>
-                  : <span>{BsIcons.BsMoon({ 'aria-label': 'Dark mode' })}</span>}
+                <span key={isDark ? 'sun-desktop' : 'moon-desktop'} className="theme-toggle-icon">
+                  {isDark
+                    ? BsIcons.BsSun({ 'aria-label': 'Light mode' })
+                    : BsIcons.BsMoon({ 'aria-label': 'Dark mode' })}
+                </span>
               </div>
             </button>
           </Nav>
