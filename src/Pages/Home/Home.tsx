@@ -7,7 +7,6 @@ import BHN from "../../Assets/BHN.jpg"
 import motio from "../../Assets/motio.jpg"
 import UTD from "../../Assets/UTD.jpg"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
-import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
 const experiences = [
   {
@@ -81,10 +80,14 @@ function Home() {
       <ProfileOverviewCard
         firstName="Shivank"
         lastName="Kapoor"
-        description="Computer Science Graduate from the University of Texas at Dallas"
+        description="Software Engineer II at Blackhawk Network"
         profilePicture={shivank_pic}
         linkedinLink="https://www.linkedin.com/in/shivankkapoor/"
         githubLink="https://github.com/ShivankKapoor"
+      />
+
+      <ExperienceSection
+        experiences={experiences}
       />
 
       <EducationSection
@@ -96,24 +99,7 @@ function Home() {
         yearEnd={2024}
       />
 
-      <ExperienceSection
-        experiences={experiences}
-      />
-
       <SkillsSection skills={skillsList} />
-
-      <CoursesSection
-        Courses={[
-          "Data Structures",
-          "Programming in Unix",
-          "Algorithm Analysis",
-          "Database Management",
-          "Software Engineering",
-          "Object Oriented Design",
-          "Operating Systems",
-          "Machine Learning",
-        ]}
-      ></CoursesSection>
 
       <p></p>
     </>
