@@ -52,7 +52,7 @@ export default function PDFSection() {
     <div className="PDF">
       <div className="PDF__container">
         <div className="PDF__container__load">
-          <label htmlFor="file">Load from file:</label>{' '}
+          <label htmlFor="file"></label>{' '}
         </div>
         <div className="PDF__container__document" ref={setContainerRef}>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
