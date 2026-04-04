@@ -97,3 +97,7 @@ code {
 [data-bs-theme="dark"] .navbar-toggler-icon {
   filter: invert(1);
 }
+
+[data-bs-theme="dark"] .logo-img {
+  filter: invert(1) brightness(1.8);
+}
