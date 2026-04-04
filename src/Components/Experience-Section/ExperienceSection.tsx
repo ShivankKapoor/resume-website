@@ -23,12 +23,34 @@ export const ExperienceSection: FunctionComponent<
                 <img className="experience-image" src={experience.workIcon} alt="Experience Icon" />
               </div>
               <div className="experience-info-container">
-                <h5>{experience.position}</h5>
-                <h6>{experience.employer}</h6>
-                <text>{experience.startMonthYear} - {experience.endMonthYear}</text>
-                <div className="experience-description">
-                  <p>{experience.description}</p>
-                </div>
+                {experience.roles ? (
+                  <>
+                    <h5>{experience.employer}</h5>
+                    <text className="experience-overall-dates">{experience.startMonthYear} - {experience.endMonthYear}</text>
+                    <div className="roles-timeline">
+                      {experience.roles.map((role, roleIndex) => (
+                        <div key={roleIndex} className="role-item">
+                          <span className="role-position">{role.position}</span>
+                          <span className="role-date">{role.startMonthYear} - {role.endMonthYear}</span>
+                          {role.description && (
+                            <div className="experience-description">
+                              <p>{role.description}</p>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h5>{experience.position}</h5>
+                    <h6>{experience.employer}</h6>
+                    <text>{experience.startMonthYear} - {experience.endMonthYear}</text>
+                    <div className="experience-description">
+                      <p>{experience.description}</p>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
