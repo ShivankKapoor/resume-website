@@ -9,7 +9,7 @@ function usePageTracker() {
 
     const trackVisit = async () => {
       // Check if the environment variable is defined
-      if (!process.env.REACT_APP_LOG_API_URL) {
+      if (!import.meta.env.REACT_APP_LOG_API_URL) {
         console.warn("Page tracking disabled: REACT_APP_LOG_API_URL environment variable not configured");
         return;
       }
@@ -20,7 +20,7 @@ function usePageTracker() {
       try {
         if (isCancelled) return;
 
-        const response = await fetch(process.env.REACT_APP_LOG_API_URL, {
+        const response = await fetch(import.meta.env.REACT_APP_LOG_API_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function usePageTracker() {
         }
 
         // Optional: Log successful tracking in development
-        if (process.env.NODE_ENV === 'development') {
+        if (import.meta.env.DEV) {
           console.log(`Page tracked: ${page}`);
         }
 
