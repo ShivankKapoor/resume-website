@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { UAParser } from "ua-parser-js";
 
 function usePageTracker() {
   const location = useLocation();
@@ -15,10 +16,20 @@ function usePageTracker() {
       }
 
       const page = location.pathname + location.search;
-      const deviceInfo = `${navigator.platform}, ${navigator.userAgent}`;
 
       try {
         if (isCancelled) return;
+
+        let deviceInfo: string;
+        try {
+          const parser = new UAParser(navigator.userAgent);
+          const { browser, os } = parser.getResult();
+          const osStr = [os.name, os.version].filter(Boolean).join(" ") || "parse error";
+          const browserStr = [browser.name, browser.version].filter(Boolean).join(" ") || "parse error";
+          deviceInfo = `${osStr}, ${browserStr}`;
+        } catch {
+          deviceInfo = "parse error";
+        }
 
         const response = await fetch(import.meta.env.REACT_APP_LOG_API_URL, {
           method: "POST",
