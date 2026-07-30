@@ -1,6 +1,6 @@
 import React from 'react';
 import './NotFound.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import LeoImg from '../../Assets/Leo.webp';
 
 const NotFound: React.FC = () => {

@@ -1,7 +1,7 @@
 import "./App.css";
 import Navibar from "./Components/Navibar/Navibar";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router';
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
 import NotFound from "./Pages/404/NotFound";
