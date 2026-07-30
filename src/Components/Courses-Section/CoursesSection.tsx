@@ -3,7 +3,7 @@ import "./CoursesSection.css";
 import { Card } from "react-bootstrap";
 
 type CoursesSectionProps = {
-    Courses: any[];
+    Courses: string[];
 };
 
 export const CoursesSection: FunctionComponent<CoursesSectionProps> = ({
@@ -26,9 +26,9 @@ export const CoursesSection: FunctionComponent<CoursesSectionProps> = ({
                             <div key={index} className="col">
                                 <ul className="list-group list-group-flush">
                                     {chunk.map((courses, coursesIndex) => (
-                                        <text key={coursesIndex} className="list-group-item">
+                                        <li key={coursesIndex} className="list-group-item">
                                             {courses}
-                                        </text>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>

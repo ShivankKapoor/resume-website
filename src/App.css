@@ -18,18 +18,43 @@ p {
   }
 }
 
-text {
+.detail-text {
   font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  text {
+  .detail-text {
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  text {
+  .detail-text {
     font-size: 0.75rem;
+  }
+}
+
+.page-fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+  transition: opacity 90ms ease-in;
+}
+
+.page-fade-exit {
+  opacity: 1;
+}
+
+.page-fade-exit-active {
+  opacity: 0;
+  transition: opacity 90ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-fade-enter-active,
+  .page-fade-exit-active {
+    transition: none;
   }
 }

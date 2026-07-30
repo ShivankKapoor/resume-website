@@ -16,7 +16,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
   projectIcon,
 }) => {
   const githubButtonClick = () => {
-    window.open(gitHubLink, "_blank");
+    window.open(gitHubLink, "_blank", "noopener,noreferrer");
   };
 
   return (

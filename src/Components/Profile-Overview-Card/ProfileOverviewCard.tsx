@@ -14,10 +14,10 @@ type ProfileOverviewCardProps = {
 
 export const ProfileOverviewCard: FunctionComponent<ProfileOverviewCardProps> = ({ firstName, lastName, profilePicture, description, linkedinLink, githubLink }) => {
     const linkedinButtonClick = () => {
-        window.open(linkedinLink, "_blank");
+        window.open(linkedinLink, "_blank", "noopener,noreferrer");
     }
     const githubButtonClick = () => {
-        window.open(githubLink, "_blank");
+        window.open(githubLink, "_blank", "noopener,noreferrer");
     }
     return (
         <div className="card-container">
