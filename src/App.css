@@ -18,18 +18,18 @@ p {
   }
 }
 
-text {
+.detail-text {
   font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  text {
+  .detail-text {
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  text {
+  .detail-text {
     font-size: 0.75rem;
   }
 }

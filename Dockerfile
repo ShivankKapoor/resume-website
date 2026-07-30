@@ -1,5 +1,5 @@
 # Build Stage
-FROM node:18 AS build
+FROM node:22 AS build
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ ENV REACT_APP_LOG_API_URL=$REACT_APP_LOG_API_URL
 RUN npm run build
 
 # Production Stage
-FROM node:18-slim
+FROM node:22-slim
 
 WORKDIR /app
 

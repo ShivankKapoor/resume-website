@@ -26,7 +26,7 @@ export const EducationSection: FunctionComponent<EducationSectionProps> = ({ sch
                     <div className="school-info-container">
                         <h5>{schoolName}</h5>
                         <h6>{degreeTitle}, {degreeMajor}</h6>
-                        <text>{yearStart} - {yearEnd}</text>
+                        <span className="detail-text">{yearStart} - {yearEnd}</span>
                     </div>
                 </Card.Body>
             </Card>

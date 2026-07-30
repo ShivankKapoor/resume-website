@@ -29,7 +29,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "browserslist": {
     "production": [
@@ -46,6 +47,8 @@
   "devDependencies": {
     "@types/ua-parser-js": "^0.7.39",
     "@vitejs/plugin-react": "^6.0.1",
-    "vite": "^8.0.11"
+    "jsdom": "^30.0.1",
+    "vite": "^8.0.11",
+    "vitest": "^4.1.10"
   }
 }

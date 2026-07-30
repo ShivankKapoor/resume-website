@@ -25,7 +25,7 @@ export const ExperienceSection: FunctionComponent<
               <div className="experience-info-container">
                 <h5>{experience.position}</h5>
                 <h6>{experience.employer}</h6>
-                <text>{experience.startMonthYear} - {experience.endMonthYear}</text>
+                <span className="detail-text">{experience.startMonthYear} - {experience.endMonthYear}</span>
                 <div className="experience-description">
                   <p>{experience.description}</p>
                 </div>
