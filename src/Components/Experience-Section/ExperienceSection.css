@@ -9,16 +9,34 @@
     margin-top: 4vh;
 }
 
-.experience-card-body {
-    font-size: 1.80vh !important;
-}
-
 .experience-card {
     width: 90vw;
 }
 
-.experience-card-title {
-    font-size: 3.25vh !important;
+.experience-info-card h3 {
+    font-size: var(--fs-xl);
+}
+
+.experience-info-card h5 {
+    font-size: var(--fs-lg);
+}
+
+.experience-info-card h6 {
+    font-size: var(--fs-md);
+}
+
+@media (max-width: 480px) {
+    .experience-info-card h3 {
+        font-size: var(--fs-lg);
+    }
+
+    .experience-info-card h5 {
+        font-size: var(--fs-md);
+    }
+
+    .experience-info-card h6 {
+        font-size: var(--fs-sm);
+    }
 }
 
 .experience-image {

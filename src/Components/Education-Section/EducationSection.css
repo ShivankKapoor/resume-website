@@ -9,16 +9,34 @@
     margin-top: 4vh;
 }
 
-.education-card-body {
-    font-size: 1.80vh !important;
-}
-
 .education-card {
     width: 90vw;
 }
 
-.education-card-title {
-    font-size: 3.25vh !important;
+.education-info-card h3 {
+    font-size: var(--fs-xl);
+}
+
+.education-info-card h5 {
+    font-size: var(--fs-lg);
+}
+
+.education-info-card h6 {
+    font-size: var(--fs-md);
+}
+
+@media (max-width: 480px) {
+    .education-info-card h3 {
+        font-size: var(--fs-lg);
+    }
+
+    .education-info-card h5 {
+        font-size: var(--fs-md);
+    }
+
+    .education-info-card h6 {
+        font-size: var(--fs-sm);
+    }
 }
 
 .education-image {

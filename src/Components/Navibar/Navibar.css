@@ -1,5 +1,6 @@
 .Navigation-Bar {
     font-weight: bold;
+    font-size: var(--fs-base);
     position: sticky !important;
     top: 0 !important;
 
@@ -22,7 +23,7 @@
     }
 
     .nav-icon {
-        font-size: 1.2em;
+        font-size: var(--fs-lg);
         vertical-align: middle;
     }
 
@@ -69,7 +70,7 @@
     }
 
     .social-link .nav-item {
-        font-size: 1.2em;
+        font-size: var(--fs-lg);
     }
 
     Nav:last-child {
@@ -88,6 +89,15 @@
     @media (max-width: 575.98px) {
         .social-link {
             display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        font-size: var(--fs-sm);
+
+        .nav-icon,
+        .social-link .nav-item {
+            font-size: var(--fs-md);
         }
     }
 }

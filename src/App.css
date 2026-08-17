@@ -3,34 +3,28 @@
 }
 
 p {
-  font-size: 1rem;
+  font-size: var(--fs-base);
 }
 
 @media (max-width: 768px) {
   p {
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
   }
 }
 
 @media (max-width: 480px) {
   p {
-    font-size: 0.8rem;
+    font-size: var(--fs-xs);
   }
 }
 
 .detail-text {
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 @media (max-width: 768px) {
   .detail-text {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .detail-text {
-    font-size: 0.75rem;
+    font-size: var(--fs-xs);
   }
 }
 

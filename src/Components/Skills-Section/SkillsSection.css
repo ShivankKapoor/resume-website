@@ -21,7 +21,6 @@
 }
 
 .skill-icon {
-  font-size: 20px;
+  font-size: var(--fs-lg);
   padding-right: 1vw;
-  /* Adjust icon size */
 }

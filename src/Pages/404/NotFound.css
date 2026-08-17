@@ -38,14 +38,14 @@
 
 .notfound-title {
   color: #333;
-  font-size: 2rem;
+  font-size: var(--fs-2xl);
   margin: 0.5rem 0;
   word-wrap: break-word;
 }
 
 .notfound-text {
   color: #666;
-  font-size: 1.125rem;
+  font-size: var(--fs-md);
   margin: 1rem 0;
   word-wrap: break-word;
 }
@@ -68,7 +68,7 @@
 }
 
 .notfound-status {
-  font-size: 3rem;
+  font-size: var(--fs-4xl);
   color: #dc3545;
   font-weight: bold;
   margin: 0.75rem 0;
@@ -80,16 +80,16 @@
     padding: 1.5rem 1rem;
   }
   .notfound-title {
-    font-size: 1.5rem;
+    font-size: var(--fs-xl);
   }
   .notfound-text {
-    font-size: 1rem;
+    font-size: var(--fs-base);
   }
   .notfound-status {
-    font-size: 2.25rem;
+    font-size: var(--fs-3xl);
   }
   .notfound-link {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
   }
 }

@@ -22,7 +22,7 @@
   }
 
   .card-body{
-    font-size: 1.80vh !important;
+    font-size: var(--fs-sm) !important;
   }
   
   .card {
@@ -31,7 +31,21 @@
   
   .card-title {
     padding-top: 5vh;
-    font-size: 3.25vh !important;
+    font-size: var(--fs-xl) !important;
+  }
+
+  .title-card h6 {
+    font-size: var(--fs-md);
+  }
+
+  @media (max-width: 480px) {
+    .card-title {
+      font-size: var(--fs-lg) !important;
+    }
+
+    .title-card h6 {
+      font-size: var(--fs-sm);
+    }
   }
 
   .btn{
