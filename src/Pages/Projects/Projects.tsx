@@ -1,8 +1,8 @@
 import ProjectCard from "../../Components/Project-card/ProjectCard";
 import "./Projects.css";
-import reelRater from "../../Assets/popcorn.png"
-import Attendance from "../../Assets/tracker.png"
-import GPA from "../../Assets/GPA.png"
+import reelRater from "../../Assets/popcorn.webp"
+import Attendance from "../../Assets/tracker.webp"
+import GPA from "../../Assets/GPA.webp"
 
 function Projects() {
   return (

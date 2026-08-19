@@ -2,10 +2,10 @@ import "./Home.css";
 import ProfileOverviewCard from "../../Components/Profile-Overview-Card/ProfileOverviewCard";
 import EducationSection from "../../Components/Education-Section/EducationSection";
 import ExperienceSection from "../../Components/Experience-Section/ExperienceSection";
-import shivank_pic from "../../Assets/shivank_pic.jpeg";
-import BHN from "../../Assets/BHN.jpg"
-import motio from "../../Assets/motio.jpg"
-import UTD from "../../Assets/UTD.jpg"
+import shivank_pic from "../../Assets/shivank_pic.webp";
+import BHN from "../../Assets/BHN.webp"
+import motio from "../../Assets/motio.webp"
+import UTD from "../../Assets/UTD.webp"
 import SkillsSection from "../../Components/Skills-Section/SkillsSection";
 import CoursesSection from "../../Components/Courses-Section/CoursesSection";
 
