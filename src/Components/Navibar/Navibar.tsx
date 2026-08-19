@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import * as BsIcons from "react-icons/bs";
 import "./Navibar.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo.webp";
 
 function Navibar() {
   const location = useLocation().pathname;
